@@ -15,6 +15,7 @@ public class OddNumberV1 {
                 filterData.put(value, 1);
             }
         }
-        return filterData.entrySet().stream().filter(x->x.getValue().equals(1)).mapToInt(x->x.getKey()).findFirst().orElse(0);
+        return filterData.entrySet().stream().filter(x->x.getValue().equals(1))
+                .mapToInt(x->x.getKey()).findFirst().orElse(0);
     }
 }
