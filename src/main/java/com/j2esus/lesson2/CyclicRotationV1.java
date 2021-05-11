@@ -1,7 +1,13 @@
 package com.j2esus.lesson2;
 
-public class CyclicRotation {
+public class CyclicRotationV1 {
 
+    /**
+     * this method gets 87% in codility
+     * @param data
+     * @param numOfRotation
+     * @return 
+     */
     public static int[] cyclicRotationArray(int[] data, int numOfRotation){
         for(int k = 0 ; k < numOfRotation ; k++){
             int lastElementOfTheArray = data[data.length - 1];
@@ -14,6 +20,4 @@ public class CyclicRotation {
         }
         return data;
     }
-    
-   
 }
