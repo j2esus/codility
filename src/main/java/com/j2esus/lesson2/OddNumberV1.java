@@ -6,7 +6,7 @@ import java.util.Map;
 public class OddNumberV1 {
 
     public static int getOddNumber(int[] data){
-        Map<Integer, Integer> filterData = new HashMap();
+        Map<Integer, Integer> filterData = new HashMap<>();
         for(int i = 0; i < data.length; i++){
             int value = data[i];
             if(filterData.containsKey(value))
